@@ -77,6 +77,8 @@ worldpath=/data/data/com.termux/files/home
 or more specific
 ```bash
 mono --server -O=all ./TerrariaServer.exe -config $PWD/myconfig.txt
+```
+
 ```bash
 mono --server -O=all ./TerrariaServer.exe -config /data/data/com.termux/files/home/myconfig.txt
 ```
