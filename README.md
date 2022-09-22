@@ -1,8 +1,53 @@
 # termux-terraserver
 Use Termux for Terraria Server
+Usar Termux para Servidor de Terraria
 
 How to install
+Como instalar
 
+## Básico - Basic
+
+| Install git - Instalar git
+```bash
+apt upgrade -y && apt update
+```
+
+```bash
+pkg install git
+```
+
+| Clonar repositorio - Clone repository
+```bash
+git clone https://github.com/krootca/termux-terraserver
+```
+
+| Instalar init.sh - Install init.sh
+```bash
+bash init.sh
+```
+| Instalar mono, para esto cambia el repositorio a Grimle - Install mono, for this change the repository for Grimle
+```bash
+termux-change-repo
+```
+
+| Ahora instale mono - Now install mono
+
+```bash
+apt upgrade -y && apt update
+```
+
+| Note for mono: when asking you install ssl press enter (default)
+```bash
+pkg install mono
+```
+
+| Ahora corra el servidor - Now run the server
+
+```bash
+mono --server -O=all ./1432/Linux/TerrariaServer.exe
+```
+
+## Avanzado - Advance
 ```bash
 apt upgrade -y && apt update
 ```
